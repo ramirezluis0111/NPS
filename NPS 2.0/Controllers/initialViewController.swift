@@ -13,14 +13,11 @@ class initialViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        //- Todo: Check if user is authenticated. If so, segue to the HomeViewController, otherwise, segue to the MenuViewController
         self.navigationController?.navigationBar.barTintColor = colorWithHexStringg(hexString: "#27CBCC")
         
         self.performSegue(withIdentifier: "toMenuScreen", sender: self)

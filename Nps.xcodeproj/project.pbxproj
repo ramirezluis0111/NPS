@@ -15,10 +15,10 @@
 		07D1025D2129053F00E4D4FC /* RecupPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D1025C2129053F00E4D4FC /* RecupPasswordViewController.swift */; };
 		07DC1495212B7675004ADB9A /* ControllerAuxPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DC1494212B7675004ADB9A /* ControllerAuxPickerView.swift */; };
 		07DC1497212BA6C0004ADB9A /* ChangeEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DC1496212BA6C0004ADB9A /* ChangeEmailViewController.swift */; };
+		07F3C95C21977102001124DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07F3C95B21977102001124DD /* Assets.xcassets */; };
 		0F77120DFB5C747B5805F19C /* libPods-NPS 2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CFA2E0D32EF9F914DE0F42A /* libPods-NPS 2.0.a */; };
 		1E3E51BF0D0B4F3B2221A0E4 /* libPods-NPS 2.0Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD602C1104C91D92C814B57 /* libPods-NPS 2.0Tests.a */; };
 		9F093D4A2037BF6000B2B31D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F093D492037BF6000B2B31D /* LoginViewController.swift */; };
-		9F1EF84420F66CF6007128F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F1EF84320F66CF5007128F5 /* Assets.xcassets */; };
 		9F74697C2045C4E4007FDC45 /* controllerAuxLoginViewC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F74697B2045C4E4007FDC45 /* controllerAuxLoginViewC.swift */; };
 		9F8C88F12038B29200030FBE /* InicioSesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8C88F02038B29200030FBE /* InicioSesionViewController.swift */; };
 		9F8C88F32038B50000030FBE /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8C88F22038B50000030FBE /* MenuViewController.swift */; };
@@ -62,11 +62,11 @@
 		07D1025C2129053F00E4D4FC /* RecupPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecupPasswordViewController.swift; sourceTree = "<group>"; };
 		07DC1494212B7675004ADB9A /* ControllerAuxPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerAuxPickerView.swift; sourceTree = "<group>"; };
 		07DC1496212BA6C0004ADB9A /* ChangeEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeEmailViewController.swift; sourceTree = "<group>"; };
+		07F3C95B21977102001124DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		541C19A737647CAC499F10E9 /* Pods-NPS 2.0Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NPS 2.0Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NPS 2.0Tests/Pods-NPS 2.0Tests.release.xcconfig"; sourceTree = "<group>"; };
 		8C8E6DC5A8B1676ECEAE6531 /* Pods-NPS 2.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NPS 2.0.release.xcconfig"; path = "Pods/Target Support Files/Pods-NPS 2.0/Pods-NPS 2.0.release.xcconfig"; sourceTree = "<group>"; };
 		9CFA2E0D32EF9F914DE0F42A /* libPods-NPS 2.0.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NPS 2.0.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F093D492037BF6000B2B31D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		9F1EF84320F66CF5007128F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F74697B2045C4E4007FDC45 /* controllerAuxLoginViewC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = controllerAuxLoginViewC.swift; sourceTree = "<group>"; };
 		9F8C88F02038B29200030FBE /* InicioSesionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioSesionViewController.swift; sourceTree = "<group>"; };
 		9F8C88F22038B50000030FBE /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -193,7 +193,7 @@
 				9F469E2720366F7F0093505F /* Utility */,
 				9FB864D7201441D40047B754 /* NotesViewController.storyboard */,
 				9FFB045E2009CC2200A09747 /* Main.storyboard */,
-				9F1EF84320F66CF5007128F5 /* Assets.xcassets */,
+				07F3C95B21977102001124DD /* Assets.xcassets */,
 				9FFB04632009CC2200A09747 /* LaunchScreen.storyboard */,
 				9FFB04662009CC2200A09747 /* Info.plist */,
 				9FF0F287203659B1003EF01E /* GoogleService-Info.plist */,
@@ -345,7 +345,7 @@
 				9FB864D8201441D40047B754 /* NotesViewController.storyboard in Resources */,
 				9FF0F288203659B1003EF01E /* GoogleService-Info.plist in Resources */,
 				9FFB04602009CC2200A09747 /* Main.storyboard in Resources */,
-				9F1EF84420F66CF6007128F5 /* Assets.xcassets in Resources */,
+				07F3C95C21977102001124DD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

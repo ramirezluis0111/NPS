@@ -7,6 +7,7 @@
 //
 
 import XCTest
+
 @testable import NPS_2_0
 
 class NPS_2_0Tests: XCTestCase {

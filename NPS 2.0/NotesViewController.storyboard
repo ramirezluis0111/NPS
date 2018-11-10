@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vk2-x5-V3P">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Notes View Controller-->
+        <scene sceneID="okM-fz-7qd">
+            <objects>
+                <viewController id="Vk2-x5-V3P" customClass="NotesViewController" customModule="NPS_2_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eb4-gr-TiN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Banner_NPS_Notas-2" translatesAutoresizingMaskIntoConstraints="NO" id="Kg8-dt-4iO">
+                                <rect key="frame" x="16" y="102" width="343" height="271"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wLQ-MO-k87">
+                                <rect key="frame" x="34" y="126" width="60" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="0E1-xY-A2F"/>
+                                    <constraint firstAttribute="height" constant="21" id="Xax-hL-If0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="..." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YSa-F2-Pcj">
+                                <rect key="frame" x="34" y="155" width="308" height="195"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.19574058220000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LMj-51-uWE">
+                                <rect key="frame" x="302" y="114" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="fJx-83-E2S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addNoteView:" destination="Vk2-x5-V3P" eventType="touchUpInside" id="iAc-cZ-k7m"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="0.70403467470000003" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Kg8-dt-4iO" firstAttribute="centerX" secondItem="YSa-F2-Pcj" secondAttribute="centerX" id="1pA-7b-252"/>
+                            <constraint firstItem="Kg8-dt-4iO" firstAttribute="leading" secondItem="eb4-gr-TiN" secondAttribute="leadingMargin" id="6iG-AC-vKL"/>
+                            <constraint firstItem="LMj-51-uWE" firstAttribute="trailing" secondItem="YSa-F2-Pcj" secondAttribute="trailing" id="7Lu-ca-7x3"/>
+                            <constraint firstItem="Kg8-dt-4iO" firstAttribute="top" secondItem="jkk-vr-2ac" secondAttribute="top" constant="82" id="B7n-nC-yvM"/>
+                            <constraint firstItem="YSa-F2-Pcj" firstAttribute="top" secondItem="wLQ-MO-k87" secondAttribute="bottom" constant="8" symbolic="YES" id="F8W-6x-3Cb"/>
+                            <constraint firstItem="LMj-51-uWE" firstAttribute="top" secondItem="jkk-vr-2ac" secondAttribute="top" constant="94" id="GJD-cR-TIC"/>
+                            <constraint firstItem="wLQ-MO-k87" firstAttribute="top" secondItem="jkk-vr-2ac" secondAttribute="top" constant="106" id="HKr-Bh-2b2"/>
+                            <constraint firstItem="wLQ-MO-k87" firstAttribute="leading" secondItem="YSa-F2-Pcj" secondAttribute="leading" id="LJR-38-e0k"/>
+                            <constraint firstItem="jkk-vr-2ac" firstAttribute="bottom" secondItem="Kg8-dt-4iO" secondAttribute="bottom" constant="294" id="Os0-kT-Z98"/>
+                            <constraint firstItem="jkk-vr-2ac" firstAttribute="bottom" secondItem="YSa-F2-Pcj" secondAttribute="bottom" constant="317" id="QiG-pP-0h4"/>
+                            <constraint firstItem="Kg8-dt-4iO" firstAttribute="trailing" secondItem="eb4-gr-TiN" secondAttribute="trailingMargin" id="R7L-uh-PXT"/>
+                            <constraint firstItem="YSa-F2-Pcj" firstAttribute="top" secondItem="LMj-51-uWE" secondAttribute="bottom" constant="1" id="rZc-nG-qbc"/>
+                            <constraint firstItem="wLQ-MO-k87" firstAttribute="leading" secondItem="jkk-vr-2ac" secondAttribute="leading" constant="34" id="vE2-AL-vMh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jkk-vr-2ac"/>
+                    </view>
+                    <connections>
+                        <outlet property="noteView" destination="YSa-F2-Pcj" id="efI-dD-IJg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yT8-Sr-qLM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1615.2" y="-164.16791604197903"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Banner_NPS_Notas-2" width="594" height="285"/>
+    </resources>
+</document>

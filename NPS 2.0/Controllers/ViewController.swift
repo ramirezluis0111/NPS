@@ -7,10 +7,14 @@
 //
 
 import UIKit
-//import FirebaseAuth
+import GoogleMobileAds
 import Firebase
 
-class ViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate {
+class ViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate, GADBannerViewDelegate {
+
+    // -----------Banner-------------
+    @IBOutlet weak var bannerView: GADBannerView!
+    // --------------------------------
 
     weak var observer: NSObjectProtocol?
     
@@ -39,11 +43,17 @@ class ViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        bannerView.adUnitID = "ca-app-pub-4454651346691286/3242939386" //ca-app-pub-3940256099942544/2934735716 ca-app-pub-4454651346691286/3242939386
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
+        
         self.navigationController?.navigationBar.barTintColor = colorWithHexStringg(hexString: "#2CD8D9")
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        
+//        addBannerViewToView(bannerView as! GADBannerView)
         
         if starAnimation == true {
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "secondView") as! SecondViewC;
@@ -172,6 +182,27 @@ class ViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate 
                                                             
                                                             self.noteTextFirstViewController.text = dateVc?.noteView.text
         }
+    }
+    
+    func addBannerViewToView(_ bannerView: GADBannerView) {
+        bannerView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(bannerView)
+        view.addConstraints(
+            [NSLayoutConstraint(item: bannerView,
+                                attribute: .bottom,
+                                relatedBy: .equal,
+                                toItem: view.safeAreaLayoutGuide.bottomAnchor,
+                                attribute: .top,
+                                multiplier: 1,
+                                constant: 0),
+             NSLayoutConstraint(item: bannerView,
+                                attribute: .centerX,
+                                relatedBy: .equal,
+                                toItem: view,
+                                attribute: .centerX,
+                                multiplier: 1,
+                                constant: 0)
+            ])
     }
 
     @objc func touchHappen(_ sender: UITapGestureRecognizer) {

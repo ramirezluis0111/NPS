@@ -40,11 +40,11 @@ func calcNPS_Spect (p: Float, n: Float, d: Float, score_act: Float) -> [Int] {
             scoreAux = ((Float(count) - d)/(Float(count) + n + d)) * 100
             count += 1
             a[0] = count - Int(p)
-        } else if 75.1 > scoreAux && scoreAux > 65.1 {
+        } else if (75.1 > scoreAux) && (scoreAux >= 65.1) {
             scoreAux = ((Float(count) - d)/(Float(count) + n + d)) * 100
             count += 1
             a[1] = count - Int(p)
-        } else if 82.5 > scoreAux && scoreAux > 75.1 {
+        } else if (82.5 >= scoreAux) && (scoreAux >= 75.1) {
             scoreAux = ((Float(count) - d)/(Float(count) + n + d)) * 100
             count += 1
             a[2] = count - Int(p)

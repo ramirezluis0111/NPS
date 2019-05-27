@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import GoogleMobileAds
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,9 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-
+        
+        // Initialize Firebase
         FirebaseApp.configure()
-    
+        
+        // Initialize AdMod
+        GADMobileAds.configure(withApplicationID: "ca-app-pub-4454651346691286~7349759250")
+        
         return true
     }
 

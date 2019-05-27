@@ -70,7 +70,7 @@ class ProfileUserViewController: UIViewController, URLSessionDataDelegate{
         
         ////// arreglar esto!!! esta bien la guarda pero no corta falta asignar valor a profileViewAux
         print(profileView.image?.isEqual(profileViewAux.image) as Any)
-        
+        // -------------------------------------------------------- //
         if name != nameCache  {
             let uid = user?.uid
             refName.child("users").child(uid!).child("name").setValue(name)

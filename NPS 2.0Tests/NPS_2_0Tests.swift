@@ -8,9 +8,9 @@
 
 import XCTest
 
-@testable import NPS_2_0
+@testable import Goup
 
-class NPS_2_0Tests: XCTestCase {
+class Goup: XCTestCase {
     
     override func setUp() {
         super.setUp()

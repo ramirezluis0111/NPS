@@ -7,9 +7,9 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>26796678375-9rtj4l77rpaphr3uqlrcaramqttfju3h.apps.googleusercontent.com</string>
+	<string>26796678375-mvsephsuanboh1o30r7qkfdqahms2v8g.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.26796678375-9rtj4l77rpaphr3uqlrcaramqttfju3h</string>
+	<string>com.googleusercontent.apps.26796678375-mvsephsuanboh1o30r7qkfdqahms2v8g</string>
 	<key>API_KEY</key>
 	<string>AIzaSyCSkqT7WxB8aoCe5IFNrdtl4C4_61MwLus</string>
 	<key>GCM_SENDER_ID</key>
@@ -17,7 +17,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>Memes.NPS-2-0</string>
+	<string>Memes.Goup</string>
 	<key>PROJECT_ID</key>
 	<string>my-nps</string>
 	<key>STORAGE_BUCKET</key>
@@ -33,8 +33,10 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:26796678375:ios:84dd291ad87107d8</string>
+	<string>1:26796678375:ios:8d588c9cbba97f99</string>
 	<key>DATABASE_URL</key>
 	<string>https://my-nps.firebaseio.com</string>
+	<key>ADMOB_APP_ID</key>
+	<string>ca-app-pub-4454651346691286~7349759250</string>
 </dict>
 </plist>
